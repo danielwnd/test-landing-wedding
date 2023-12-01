@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="container-header">
-      <nav className="flex gap-">
+      <nav className="flex">
         <div>sandwitgh mobile</div>
         <div>logo</div>
         <div>{"(nav) - movile"}</div>

@@ -1,0 +1,9 @@
+.container-header {
+  padding-left: $paddingX_xs;
+  padding-right: $paddingX_xs;
+
+  @media (min-width: $sm) {
+    padding-left: $paddingX_lg;
+    padding-right: $paddingX_lg;
+  }
+}
