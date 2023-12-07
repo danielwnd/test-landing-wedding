@@ -1,5 +1,7 @@
 @import "./parameters.scss";
-@import "../assets/fonts/stylesheet.css";
+//@import "../assets/fonts/stylesheet.css";
+@import "../assets/fonts/beauty/stylesheet.css";
+@import "../assets/fonts/Roboto/stylesheet.css";
 
 html,
 body,
@@ -82,16 +84,303 @@ time,
 mark,
 audio,
 video {
-  font-family: Gilroy, system-ui, -apple-system, "Segoe UI", Roboto,
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   vertical-align: baseline;
 }
-
+.fn-beauty {
+  font-family: Beauty, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.fn-roboto-light {
+  font-family: "Roboto light", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.fn-roboto-medium {
+  font-family: "Roboto medium", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.fn-roboto-bold {
+  font-family: "Roboto bold", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.btn {
+  padding: 11px 34px;
+  border-radius: 4px;
+  cursor: pointer;
+  &.btn-secondary {
+    background-color: $colorTextPrimary;
+    color: $colorTextSecondary;
+    font-size: 11px;
+    border: 0;
+  }
+}
 .btn-primary {
-    background-color: $colorPrimary;
-    border-radius: 2px;
-    
+  background-color: $colorPrimary;
+  border-radius: 2px;
+}
+.btn-secondary {
+  background-color: $colorSecondary;
+  border-radius: 2px;
+  color: $colorTextSecondary;
+}
+
+.btn-register {
+  max-width: 363px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  margin: auto;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Roboto light";
+}
+.btn-social {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+  justify-content: center;
+  align-items: center;
+  i {
+    display: flex;
+  }
+}
+.tree-points {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+input {
+  min-height: 40px;
+}
+.input-style {
+  min-height: 40px;
+}
+.container-slider-hotels {
+  .container-slider {
+    max-width: 1265px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card-basic-info {
+  .title {
+    font-size: 1.25rem;
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: $colorTextPrimary;
+  }
+  .subtitle {
+    margin: 0;
+    padding: 0;
+    color: $colorTextPrimary;
+
+    font-size: 0.75rem;
+    font-family: "Roboto light";
+    text-transform: uppercase;
+  }
+  .description {
+    color: $colorTextPrimary;
+    margin: 0;
+    padding: 0;
+    font-size: 0.75rem;
+  }
+  .btn {
+    margin-top: 15px;
+    padding: 11px 34px;
+    border-radius: 4px;
+    display: none;
+    text-transform: uppercase;
+  }
+  @media (min-width: $md) {
+    .title {
+      font-size: 2.5rem;
+      line-height: 2.2rem;
+      font-family: "Times New Roman", Times, serif;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-size: 1.125rem;
+      line-height: 1.2rem;
+      font-family: "Roboto light";
+      text-transform: uppercase;
+      padding-bottom: 12px;
+    }
+    .description {
+      font-size: 0.75rem;
+      max-width: 344px;
+    }
+    .btn {
+      display: flex;
+    }
+  }
+}
+
+.box-image-description {
+  cursor: pointer;
+  position: relative;
+  .content-hidden {
+    position: absolute;
+    transition: all 1s;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    //display: none;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 33px;
+    .content-body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+      color: $colorTextSecondary;
+      max-width: 279px;
+      padding-left: $paddingX_xs;
+      padding-right: $paddingX_xs;
+      .btn-icon {
+        border: 0;
+        padding: 0;
+        margin: auto;
+        font-size: 30px;
+        margin-bottom: 22px;
+        background-color: transparent;
+        color: $colorTextSecondary;
+        .icon {
+          display: flex;
+        }
+      }
+      .title {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-family: "Roboto bold";
+        text-transform: uppercase;
+      }
+      .description {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        font-family: "Roboto light";
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+    }
+  }
+  &:hover {
+    .content-hidden {
+      //display: flex;
+      opacity: 1;
+    }
+  }
+}
+
+.modal-leo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e3b0;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 600px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  &.active {
+    display: flex;
+  }
+}
+
+
+#modal-gallery {
+  .modal-content {
+    //max-height: 500px;
+    .slick-slide img {
+      height: 500px;
+      width: auto !important;
+    }
+    .slick-arrow {
+      color: $colorTextPrimary;
+      font-size: 20px;
+    }
+    .slick-prev, .slick-next {
+      &::before {
+        content: '';
+      }
+    }
+  }
+}
+@media (max-width: $mdless) {
+  #modal-gallery {
+    .modal-content {
+      .slick-slide img {
+        width: 100% !important;
+        max-width: 320px;
+        height: auto;
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .box-image-description {
+    .content-hidden {
+      display: none !important;
+    }
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1440px;
+  }
 }
 
 @import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/slider.scss";
+@import "./components/formregister.scss";
+@import "./components/videoplayer.scss";
+@import "./components/gallery-collage.scss";
+
+@import "./section/main-home.scss";
+@import "./section/informationweddingslider.scss";
+@import "./section/wedding-remember.scss";
+@import "./section/gallery-description.scss";

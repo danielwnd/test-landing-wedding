@@ -1,0 +1,42 @@
+.information-wedding-slider {
+  padding-bottom: 38px;
+  .content-description {
+    .title {
+      text-transform: uppercase;
+      color: $colorTextPrimary;
+    }
+    .subtitle {
+      color: $colorTextPrimary;
+    }
+    .description {
+      max-width: 867px;
+      color: $colorTextPrimary;
+    }
+  }
+  .container-slider {
+    max-width: 1265px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $md) {
+    .content-description .subtitle {
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+  @media (min-width: $md) {
+    .content-description {
+        .title {
+          font-size: 2.5rem !important;
+          line-height: 3rem;
+          font-family: "Times New Roman", Times, serif;
+          font-weight: bold;
+        }
+        .subtitle {
+          font-size: 1.125rem !important;
+        }
+
+    }
+    padding-bottom: 132px;
+  }
+}

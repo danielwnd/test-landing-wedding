@@ -1,0 +1,25 @@
+.form-register {
+    input {
+        color: $colorTextSecondary;
+        background-color: transparent;
+        border: 1px solid $colorTextSecondary;
+        border-radius: 4px;
+        width: 100%;
+        padding: 11px 9px;
+        font-family: 'Roboto light';
+        font-size: 12px;
+        &:active, &:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.658);
+        }
+        &::placeholder  {
+            color: $colorTextSecondary;
+        }
+    }
+    button {
+        background-color: $colorTextPrimary;
+        color: $colorTextSecondary;
+        border-radius: 4px;
+        padding: 11px 35px;
+        font-size: 11px;
+    }
+}

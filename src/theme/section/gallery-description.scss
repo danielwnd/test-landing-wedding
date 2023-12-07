@@ -1,0 +1,34 @@
+.gallery-description {
+    display: flex;
+    padding-bottom: 21px;
+    gap: 4px;
+    > div {
+        width: 50%;
+    }
+    .card-basic-info {
+        padding-left: $paddingX_xs;
+        padding-right: $paddingX_xs;
+    }
+    @media (min-width: $md) {
+        padding-bottom: 88px;
+        > div {
+            width: initial;
+        }
+        .content-media {
+            display: block;
+        }
+        .card-basic-info {
+            width: 419px;
+            padding-left: 22px;
+            padding-right: 22px;
+            margin-bottom: 28px;
+        }
+    }
+
+    @media (min-width: $md) and (max-width: $tb) {
+        .media-player-video {
+            width: 100%;
+            height: 178px;
+        }
+    }
+}

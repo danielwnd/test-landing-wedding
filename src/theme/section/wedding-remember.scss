@@ -1,0 +1,59 @@
+.wedding-remember {
+  padding-top: 35px;
+  padding-bottom: 40px;
+  padding-left: $paddingX_lg;
+  padding-right: $paddingX_lg;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1028px;
+  transition: all 2s;
+  display: flex;
+  align-items: center;
+  img {
+    width: 100px;
+    min-height: 306px;
+    object-fit: cover;
+    transition: all 2s;
+  }
+  .content-description {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: $colorTextPrimary;
+    .title {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 20px;
+      padding-bottom: 9px;
+    }
+    .description {
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 50px;
+    padding-bottom: 57px;
+    img {
+      width: 514px;
+      height: 405px;
+      object-fit: initial;
+    }
+    .content-description {
+      padding-left: 20px;
+      padding-right: 20px;
+      color: $colorTextPrimary;
+      .title {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 40px;
+        line-height: 48px;
+        padding-bottom: 9px;
+      }
+      .description {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

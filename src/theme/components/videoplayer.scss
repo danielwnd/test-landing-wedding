@@ -1,0 +1,56 @@
+.media-player-video {
+  position: relative;
+  width: 183px;
+  height: 131px;
+  max-width: 419px;
+  max-height: 232px;
+  .btn-player {
+    border: 0;
+    padding: 0;
+    display: flex;
+    background-color: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+    color: $colorTextSecondary;
+    &.hide {
+      display: none;
+    }
+    .icon {
+      font-size: 40px;
+      display: flex;
+    }
+  }
+  .image-thum {
+    transition: all 1s;
+    transition: filter 2s;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    &:hover {
+        filter: blur(1px);
+    }
+    &.hide {
+      transition: all 1s;
+      opacity: 0;
+    }
+
+  }
+  .iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (min-width: $md) {
+    width: 419px;
+    height: 232px;
+  }
+}

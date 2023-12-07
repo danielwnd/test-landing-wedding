@@ -1,0 +1,137 @@
+.container-slider {
+  padding: 13px 11px;
+  background-color: white;
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    // gap: 10px;
+    // display: flex;
+    // justify-content: center;
+    > div {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  &.slider-border {
+    border-radius: 4px;
+    box-shadow: 0px -8px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.card-service {
+  --width-service: 177px;
+  --height-service: 120px;
+  position: relative;
+  height: var(--height-service);
+  width: var(--width-service) !important;
+  color: $colorTextSecondary;
+  img {
+    width: var(--width-service);
+    height: var(--height-service);
+    position: absolute;
+    border-radius: 2px;
+    // object-fit: contain;
+    z-index: 1;
+  }
+  .container-body {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    right: 20px;
+    top: 72px;
+    text-align: center;
+    .title {
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+    }
+    .subtitle {
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.container-slider-button-externals {
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+  gap: 6px;
+  button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: #AFB5BD;
+    .icon {
+      font-size: 30px;
+    }
+
+    &:hover {
+      color: $colorgrey;
+    }
+    &:active {
+      color: $colorTextPrimary;
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  .container-slider {
+    &.slider-border {
+      box-shadow: 0px -4px 5px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .card-service {
+    --width-service: 302px;
+
+    &.card-hotel {
+      --height-service: 204px;
+      height: var(--height-service);
+      width: var(--width-service) !important;
+      img {
+        width: var(--width-service);
+        height: var(--height-service);
+      }
+      .container-body {
+        top: initial;
+        bottom: 18px;
+        .title {
+          font-size: 18px;
+        }
+        .subtitle {
+          font-size: 18px;
+          font-family: 'Roboto medium';
+        }
+      }
+    }
+    &.card-wedding {
+      --height-service: 250px;
+      height: var(--height-service);
+      width: var(--width-service) !important;
+      img {
+        width: var(--width-service);
+        height: var(--height-service);
+      }
+      .container-body {
+        top: initial;
+        bottom: 28px;
+        .title {
+          font-size: 24px;
+          line-height: 45px;
+          font-family: 'Times New Roman', Times, serif;
+          text-overflow: ellipsis;
+          overflow: hidden;
+white-space: nowrap;
+        }
+        .subtitle {
+          font-size: 12px;
+          font-family: 'Roboto light';
+        }
+      }
+    }
+  }
+}

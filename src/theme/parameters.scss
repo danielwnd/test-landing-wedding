@@ -1,4 +1,12 @@
 $colorPrimary: #FF7E7E;
+$colorSecondary: #2A2C2E;
+$colorTextSecondary: white;
+$colorTransparentSecondary: rgba(255,255,255,0.38);
+
+$colorTextPrimary: #444444;
+$colorgrey: #D8D8D8;
+$colorHeaderText: white;
+
 
 $paddingX_xs: 13px;
 $paddingX_md: 13px;
@@ -6,6 +14,10 @@ $paddingX_lg: 23px;
 
 $xs: 0;
 $sm: 640px;
+$mdless: 767px;
 $md: 768px;
+$tb: 992px;
 $lg: 1024px;
+$lgless: 1023px;
+$lgmore: 1025px;
 $xl: 1280px;
